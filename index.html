@@ -6,21 +6,50 @@
   <title>My Simple Web Page</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0077b6, #00b4d8);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
-      margin: 50px;
-      background: #f0f0f0;
     }
+
     h1 {
-      color: #333;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
     }
+
     p {
-      color: #666;
+      font-size: 1.2rem;
+      max-width: 500px;
+    }
+
+    .button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #ffffff;
+      color: #0077b6;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #caf0f8;
     }
   </style>
 </head>
 <body>
-  <h1>Hello, this is my simple web page!</h1>
-  <p>Created for an assessment and hosted on GitHub Pages.</p>
+  <h1>🚀 Welcome to My Web Page</h1>
+  <p>This page is live on GitHub Pages and now has some simple styling!</p>
+  <button class="button" onclick="alert('Thanks for visiting!')">Click Me</button>
 </body>
 </html>
